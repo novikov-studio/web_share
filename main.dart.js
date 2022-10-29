@@ -15081,15 +15081,15 @@ this.b=a
 this.c=null},
 kB:function kB(a,b){this.c=a
 this.a=b},
-kW(a,b,c){var s=0,r=A.U(t.H),q,p,o,n,m,l
+kW(a,b,c){var s=0,r=A.U(t.H),q,p,o,n,m,l,k,j
 var $async$kW=A.V(function(d,e){if(d===1)return A.R(e,r)
 while(true)switch(s){case 0:s=2
 return A.N(A.a_2(a),$async$kW)
-case 2:m=e
-l=A.a6a(A.d4(m,0,12))
-A.uG().$1("loaded: "+l.h(0))
-q=A.bA(m,0,null)
-case 3:switch(l.a){case 0:s=5
+case 2:k=e
+j=A.a6a(A.d4(k,0,12))
+A.uG().$1("loaded: "+j.h(0))
+q=A.bA(k,0,null)
+case 3:switch(j.a){case 0:s=5
 break
 case 1:s=6
 break
@@ -15114,14 +15114,16 @@ break
 case 4:if(q==null)throw A.d(A.cm("Not converted"))
 p=A.a6a(A.d4(q.buffer,0,12))
 A.uG().$1("converted to: "+p.h(0))
+o=p.b
+n="image/"+o
 Date.now()
-o=q.length
-n=new A.eU("image/*",b+"."+p.b,$,o)
-o=A.a9A([q],"image/*")
-n.f=o
-n.c=(self.URL||self.webkitURL).createObjectURL(o)
+m=q.length
+l=new A.eU(n,b+"."+o,$,m)
+o=A.a9A([q],n)
+l.f=o
+l.c=(self.URL||self.webkitURL).createObjectURL(o)
 s=12
-return A.N(A.a1o(A.a([n],t.uv)),$async$kW)
+return A.N(A.a1o(A.a([l],t.uv)),$async$kW)
 case 12:A.uG().$1("shared ok")
 return A.S(null,r)}})
 return A.T($async$kW,r)},
